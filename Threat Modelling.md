@@ -214,7 +214,7 @@ Identifying the proper mitigation technique can sometimes be difficult. There ar
     Digital signatures
     Message authentication codes
 
-**Repudiation - Nonrepudiation:** 
+**Repudiation - Non-repudiation:** 
 
     Strong authentication
     digital signatures
