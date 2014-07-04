@@ -77,12 +77,13 @@ A threat categorization such as STRIDE is useful in the identification of threat
 
 A threat list of generic threats organized in these categories with examples and the affected security controls is provided in the following table:
 
+|                                       |
 |Type   |Example   |Security Control   |
 |:---:|:---:|:---:|
 |Spoofing   |Threat action aimed to illegally access and use another user's credentials, such as username and password.   |Authentication   |
-|Tampering   |   |Integrity   |
-|Repudiation   |   |   |
-|Information Disclosure   |   |   |
-|Denial of Service   |   |   |
-|Elevation of Privilege   |   |   |
-|   |   |   |
+|Tampering   |Threat action aimed to maliciously change/modify persistent data, such as persistent data in a database, and the alteration of data in transit between two computers over an open network, such as the Internet.   |Integrity   |
+|Repudiation   |Threat action aimed to perform illegal operations in a system that lacks the ability to trace the prohibited operations.   |Non-Repudiation  |
+|Information Disclosure   |Threat action to read a file that one was not granted access to, or to read data in transit.   |Confidentiality   |
+|Denial of Service   |Threat aimed to deny access to valid users, such as by making a web server temporarily unavailable or unusable.   |Availability   |
+|Elevation of Privilege   |Threat aimed to gain privileged access to resources for gaining unauthorized access to information or to compromise a system.   |Authorization   |
+
