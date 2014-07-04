@@ -79,10 +79,10 @@ A threat list of generic threats organized in these categories with examples and
 
 |Type   |Example   |Security Control   |
 |:---:|:---:|:---:|
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|Spoofing   |   |   |
+|Tampering   |   |   |
+|Repudiation   |   |   |
+|Information Disclosure   |   |   |
+|Denial of Service   |   |   |
+|Elevation of Privilege   |   |   |
 |   |   |   |
