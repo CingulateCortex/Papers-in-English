@@ -93,3 +93,71 @@ A threat list of generic threats organized in these categories with examples and
 The root node is the threat and child nodes are the conditions necessary for the threat to be realized. Threat trees are used during penetration testing to construct test cases from the condition nodes.  Below chart a simple example for a threat tree
 
 ![alt text](http://cingulatecortex.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-10-at-14.44.35.png "Title")
+
+* **Identifying Vulnerabilities**
+
+Threat and conditions can be mitigated or unmitigated. Attack paths can be built by identifying unmitigated routes from the leaf conditions to the root threat. Unmitigated attack paths yield vulnerabilities, which inherit the root threats STRIDE classifications.
+
+For example. consider the vulnerability from the previous example of the online store threat three. Here, the SQL injection vulnerability in the query fields allows an attacker to obtain access to an account without proper credentials. This vulnerability can be classified as sensitive information disclosure.
+
+The fifth and final step in threat modelling is analyzing the risks. In application, vulnerabilties give rise to risks, and the more serious vulnerability the higher risk you have. You can asses a vulnerability by using DREAD ratings. For ever vulnerability, a rating between zero and ten is assigned for each of the DREAD categories.
+
+Dread stands for Damage, Reproducibility, Exploitability, Affected Users and Discoverability.
+
+####Applying Threat Modelling
+
+    Describe the application using diagrams
+    Identify the threat types by using STRIDE
+    Identify appropriate mitigation techniques
+    Recognize the role of the threat model documents
+    Identify the tools that help with threat modelling
+
+####Important Questions for Applying Threat Modelling
+
+    What security guarantees will be made to end users?
+    What security expectations will end users have?
+    In what environments do you expect the release product to be used?
+    Who will be using it?
+    How do you expect the final product to be used?
+    Can you think of any ways the product might be abused?
+    What id one those users intended harm?
+    What damage might such an adversary be able to cause?
+    What design level mitigations might work for your product?
+    What feature level mitigations might work for your product?
+
+
+* **Components of a Diagram**
+
+Processes: are shown by a circle and the list is given below includes processes
+
+    DLLs
+    EXEs
+    COM Objects
+    Components
+    Services
+    Web Services
+    Assemblies
+    Etc.
+
+Data Flows: Arrows represents the data flows such as function call, network traffic, RPC, etc.
+
+Data Stores: Horizontal Bars represent the data stores such as Database, Files, Registries, Queues, Stacks, etc.
+
+External Entities: Rectangular represents external entities such as people, other systems, data feeds, events, notifications, etc
+
+Trust Boundary: Trust Boundaries are logical separations for elements that are at different trust levels, or are mutually distrustful. They are key to a threat model since they help identify points of attacks. Everything on the attack surface is a trust boundary; however trust boundaries can exist within the attack surface since no filter could possibly validate all data for all possible uses.
+
+* **Sample Diagram**
+
+![alt_text](http://cingulatecortex.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-10-at-15.50.16.png " ")
+
+* **Key Points for Diagram**
+ * Diagram should not be as detailed as a flowchart, class diagram or call graph
+ * Each diagram should contain at least one trust boundary. Otherwise why are drawing it?
+ * Are items in the diagram numbered? If not it is easy to miss some as you transfer data to other documents
+ * Does data flow magically between databases? There needs to be a process between them
+ * Does data magically appear? Data originates from external actors, not from data stores
+ * Are there data sinks? Data is placed in a data store for a reason. Either data used by external actors or it is wasting disk space
+ * Are all elements on the diagram clearly labeled?
+ * Are any data flow labeled with generic terms such as read, write or query? if so give them a more descriptive name
+ 
