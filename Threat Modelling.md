@@ -79,8 +79,8 @@ A threat list of generic threats organized in these categories with examples and
 
 |Type   |Example   |Security Control   |
 |:---:|:---:|:---:|
-|Spoofing   |   |   |
-|Tampering   |   |   |
+|Spoofing   |Threat action aimed to illegally access and use another user's credentials, such as username and password.   |Authentication   |
+|Tampering   |   |Integrity   |
 |Repudiation   |   |   |
 |Information Disclosure   |   |   |
 |Denial of Service   |   |   |
