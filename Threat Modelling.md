@@ -161,3 +161,96 @@ Trust Boundary: Trust Boundaries are logical separations for elements that are a
  * Are all elements on the diagram clearly labeled?
  * Are any data flow labeled with generic terms such as read, write or query? if so give them a more descriptive name
  
+###STRIDE Model
+
+STRIDE is a model to help you clearly understand threats so they can be properly mitigated. Do now worry about trying to classify all identified threats within the STRIDE system. It is simply a tool to help you think through what might go wrong. As such, you should focus on identification and mitigation of threats not on their classification
+
+####Threat Classification
+
+* **Spoofing:** Spoofing threats involve an adversary creating and exploiting confusion about the identity of someone or something. Spoofing threats apply to the entity being fooled, not entity being impersonated. External entities as well as internal processes are subject to spoofing threats.
+
+For example, a bank website may be spoofed. The threat applies to the bank customers who are fooled into disclosing their login credentials. Or an adversary spoofs another user's authentication cookie. The threat applies to the website which is fooled into authenticating the adversary as a legitimate user.
+
+* **Tampering:** Involve an adversary modifying data, usually as it flows across a network, in memory, or in disk
+
+For example, an adversary modifies network packets to change settings after a user has logged in or change a registry key to make an application run any program he wants
+
+* **Repudiation:** Repudiation threats involve an adversary who performs an action and then plausibly denies performed the action.
+
+For example, Alice insists she has never used that program or Bob claims he did not send that email and so on.
+
+* **Information Disclosure:** involves data that can be accessed by someone who should not have access
+
+For example, and adversary access another user's password, deleted mails or obtaining all the names and credit card numbers in database
+
+* **Denial of Service:** Involve denying legitimate users access to a system or component
+
+For example, an adversary prevents customers from connecting to a website or prevents the client from using SSL forcing a downgrade to unencrypted connection
+
+* **Elevation of Privilege:** involve a user or component being able to access data or programs for which they are not authorized.
+
+For example, an adversary who should only have read access to some file is able to edit the file as well.
+
+####Identifying Applicable Standard Threat Mitigations
+
+Identifying the proper mitigation technique can sometimes be difficult. There are numerous things you can do to help with this problem. Of course there are different types of mitigation techniques but below mitigations are seen as industry standard.
+
+**Spoofing - Authentication:**
+
+    Basic authentication
+    Digest authentication
+    Cookie authentication
+    Kerberos authentication
+    PKI systems
+    IPSec
+    Digitally signed packets
+    Digital signatures
+    Message authentication codes
+    Hashes
+
+**Tampering - Integrity:**
+
+    Access Control lists
+    Digital signatures
+    Message authentication codes
+
+**Repudiation - Nonrepudiation:** 
+
+    Strong authentication
+    digital signatures
+    Secure Timestamps
+    Trusted third parties
+
+**Information Disclosure - Confidentiality:** 
+
+    Encryption
+    Access control lists
+
+**Denial of Service - Availability :**
+
+    Access control lists
+    filtering
+    Quotas
+    Authorization
+    High availability design
+
+**Elevation of Privilege - Authorization:**
+
+    Access control lists
+    Group or role membership
+    Privilege ownership
+    Permission
+    Input validation
+
+ 
+
+####Threat Model Document Sections
+
+ 1- Threat Model Information: The threat model information section contains general information about the documents and the project. The information within this section should be high level and brief. The required items within the threat model information section are; product name and version, milestone, owner, participants, reviewer, location, a short description of the document.
+ 2- Diagrams: Diagrams are the core of the threat models. As visual aids, diagrams assist in understanding the products's architecture and identifying potential threats. Diagrams are very helpful when validating threat model documents.
+ 3 - Threats and Mitigations: It is important to remember that threats are permanent and continue to be present even if you have mitigated them. Documenting the threats that affect the application and how hey have been mitigated will improve the threat modelling process in future revisions of the product. The threats and mitigations section of a series of tables with one threat and mitigation per table. Each of the tables should include fallowing items. An ID number for the threat, the name of the threat, the name of the element that is impacted and on what diagrams it appears, description of the threat, the STRIDE type, if the threat is mitigated or not, explanation of the mitigation, investigation notes, entry points that are impact, protected resources for which access if affected by particular mitigations.
+ 4- Dependencies: Enumeration of the product's dependencies, explain why they are necessary and to provide any security notes that were produced while selecting them. Dependencies should be listed when a failure in the dependency can lead to a security flaw, there is a choice between dependencies. On the other hand, each entry in the dependencies section requires the fallowing items; an ID for item, the name of the dependencies and ex explanation of how and why the dependency was chosen
+ 5- Assumptions: The purpose of the assumptions section is to identify any security assumptions that have been made while gathering requirements and creating diagrams. Each entry in the assumptions section requires fallowing items; an ID for the item, the name of the assumption, a description of the assumption
+ 6- External Security Notes: are necessary for customers to know how to use product safely. Use this field to record anything you think will help any external evaluator to understand the threat models. And requires fallowing items; an id for item, the name of the security note and the contents of the security note.
+ 7- Scenarios: optional place to enumerate important security scenarios. The value of this section is to server as a reminder to threat model each scenario's unique features and to help others who have not had prior introduction to the product.
+ 8- Protected Resources or Assets: In two ways this optional section can be used. Protected resources are aspects of the system whose protection is critical, such as the SAM or the TPM keys. Assets are things which an attacker has reason to steal or deny access to, such as a customer database, source code of your application or network connectivity and include and if for the item, the name of the asset or resource, a description of how the asset or resource can be compromised or misused by an adversary.
