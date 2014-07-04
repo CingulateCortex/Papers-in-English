@@ -87,3 +87,9 @@ A threat list of generic threats organized in these categories with examples and
 |Denial of Service   |Threat aimed to deny access to valid users, such as by making a web server temporarily unavailable or unusable.   |Availability   |
 |Elevation of Privilege   |Threat aimed to gain privileged access to resources for gaining unauthorized access to information or to compromise a system.   |Authorization   |
 
+
+* **Building Threat Trees**
+
+The root node is the threat and child nodes are the conditions necessary for the threat to be realized. Threat trees are used during penetration testing to construct test cases from the condition nodes.  Below chart a simple example for a threat tree
+
+![alt text](http://cingulatecortex.com/wp-content/uploads/2013/11/Screen-Shot-2013-11-10-at-14.44.35.png "Title")
