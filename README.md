@@ -1,4 +1,4 @@
-Makaleler Yardim Dosyasi 
+README
 ================================
 
 In this repo, you will find articles related with cyber security, terrorism, perception management, psychology, sociology
