@@ -33,7 +33,7 @@ For example, in an online storing system, customer data, checkout cart, merchand
 
 When you consider about customer data it may end up a mess. Because, protecting customer data is not always protecting the database you are storing these information. Sometimes you need to consider client side attack protection depends on your application or the criticality of the data being stored.
 
-* **Identifying Roles
+* **Identifying Roles**
 
 Roles reflect the set of privileges included in your application. Roles usually translate to the types of users of the system. But can also refer to privilege levels without an associated role such as user mode versus kernel mode. Each entry point and asset has an associated list of roles. Recording the roles for each entry point or asset might reveal escalation of privilege or sensitive information disclosure threats.
 
@@ -43,7 +43,7 @@ For example, in an online storing system, web customer, third party payment proc
 
 ## Building the Threat Profile
 
-* **Identifying Threats
+* **Identifying Threats**
 
 Threats are negative impacts on an asset of interest to an attacker. Threats have the fallowing characteristics.
 
@@ -53,12 +53,12 @@ Threats are negative impacts on an asset of interest to an attacker. Threats hav
 
 For example, continuing with the example of an online store application, some of the threats from the online storage activity matrix include
 
-    Attacker steals customer information
-    Attacker deletes information from the merchandise database
-    Attacker compromise the operating system or penetrate into internal network
-    etc.
+ * Attacker steals customer information
+ * Attacker deletes information from the merchandise database
+ * Attacker compromise the operating system or penetrate into internal network
+ * etc.
 
-Classifying Threats
+* **Classifying Threats**
 
 Threats are classified based on the STRIDE rule
 
