@@ -77,8 +77,8 @@ A threat categorization such as STRIDE is useful in the identification of threat
 
 A threat list of generic threats organized in these categories with examples and the affected security controls is provided in the following table:
 
-|   |   |   |
-|---|---|---|
+|Type   |Example   |Security Control   |
+|:---:|:---:|:---:|
 |   |   |   |
 |   |   |   |
 |   |   |   |
